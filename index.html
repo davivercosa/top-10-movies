@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top 10 List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <!-- the main title of the page -->
+          <h1 class="mt-5 text-center" id="mainTitle">Top 10 Movies</h1>
+          <p class="mb-5 text-center">
+            According to
+            <a
+              href="https://www.hollywoodreporter.com/lists/100-best-films-ever-hollywood-favorites-818512/item/seven-samurai-hollywoods-100-favorite-818479"
+              target="_blank"
+              >The Hollywood Reporter</a
+            >
+          </p>
+
+          <div>
+            <button id="btnShowTopFive" class="btn btn-primary mb-5">
+              Show Only Top 5
+            </button>
+            <button id="btnShowAll" class="btn btn-primary mb-5">
+              Show All
+            </button>
+            <button id="btnHighlightThe" class="btn btn-primary mb-5">
+              Highlight Titles with "The" in them
+            </button>
+          </div>
+
+          <div id="movieListWrapper" class="mb-5">
+            <ul id="movieList">
+              <li id="movie-1" class="top5">
+                <span>1</span>
+                The Godfather
+                <button class="btnDelete">&times;</button>
+              </li>
+
+              <li id="movie-2" class="top5">
+                <span>2</span>
+                The Wizard of Oz
+                <button class="btnDelete">&times;</button>
+              </li>
+
+              <li id="movie-3" class="top5">
+                <span>3</span>
+                Citizen Kane
+                <button class="btnDelete">&times;</button>
+              </li>
+
+              <li id="movie-4" class="top5">
+                <span>4</span>
+                The Shawshank Redemption
+                <button class="btnDelete">&times;</button>
+              </li>
+
+              <li id="movie-5" class="top5">
+                <span>5</span>
+                Pulp Fiction
+                <button class="btnDelete">&times;</button>
+              </li>
+
+              <li id="movie-6">
+                <span>6</span>
+                Casablanca
+                <button class="btnDelete">&times;</button>
+              </li>
+
+              <li id="movie-7">
+                <span>7</span>
+                The Godfather: Part II
+                <button class="btnDelete">&times;</button>
+              </li>
+
+              <li id="movie-8">
+                <span>8</span>
+                E.T. The Extra-Terrestrial
+                <button class="btnDelete">&times;</button>
+              </li>
+
+              <li id="movie-9">
+                <span>9</span>
+                2001: A Space Odyssey
+                <button class="btnDelete">&times;</button>
+              </li>
+
+              <li id="movie-10">
+                <span>10</span>
+                Schindler's List
+                <button class="btnDelete">&times;</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
